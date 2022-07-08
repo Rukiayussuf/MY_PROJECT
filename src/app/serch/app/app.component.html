@@ -1,0 +1,24 @@
+<h1>{{SEACH}}</h1>
+<input [(ngModel)]="searchText" placeholder="Enter Product ID" />
+<br/><br/>
+<table width="15%" border="1">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Ticket of Ticket | filter:searchText">
+      <td>{{carservice.id}}</td>
+      <td>{{ carService.date }}</td>
+      <td>{{ carService.first_name }}</td>
+      <td>{{ carService.last_name }}</td>
+     <td>{{ carService.gender }}</td>
+    <td>{{ carService.phone_no }}</td>
+    <td>{{ carService.dest_price }}</td>
+    <td>{{ carService.day }}</td>
+     <td>{{ carService.time }}</td>
+    </tr>
+  </tbody>
+</table>

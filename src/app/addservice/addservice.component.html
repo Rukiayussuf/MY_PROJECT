@@ -1,0 +1,59 @@
+
+<h3>Add Tickets</h3>
+<form (ngSubmit)="onSubmit()" >
+<div class="row">
+   <div class="col">
+    <div class="form-group">
+        <label>DATE: </label>
+        <input type="date" class="form-control" id="date"
+            [(ngModel)] ="carserv.date" name="date">
+    </div>
+
+    <div class="form-group">
+        <label>FIRST NAME: </label>
+        <input type="text" class="form-control" id="first_name"
+            [(ngModel)] ="carserv.first_name" name="first_name">
+    </div>
+
+    <div class="form-group">
+        <label>LAST NAME: </label>
+        <input type="text" class="form-control" id="last_name"
+            [(ngModel)] ="carserv.last_name" name="last_name">
+    </div>
+
+    <div class="form-group">
+        <label>GENDER </label>
+        <input type="text" class="form-control" id="gender"
+            [(ngModel)] ="carserv.gender" name="gender">
+    </div>
+   </div>
+
+   <div class="col">
+    <div class="form-group">
+        <label>PHONE NUMBER: </label>
+        <input type="text" class="form-control" id="phone_no"
+            [(ngModel)] ="carserv.phone_no" name="phone no">
+    </div>
+
+    <div class="form-group">
+        <label>DESTINATION AND PRICE: </label>
+        <input type="text" class="form-control" id="dest_price"
+            [(ngModel)] ="carserv.dest_price" name="dest_price">
+    </div>
+
+    <div class="form-group">
+        <label>DAY: </label>
+        <input type="text" class="form-control" id="day"
+            [(ngModel)] ="carserv.day" name="day">
+    </div>
+
+    <div class="form-group">
+        <label>TIME: </label>
+        <input type="text" class="form-control" id="time"
+            [(ngModel)] ="carserv.time" name="time">
+    </div>
+   </div>
+</div>
+    <button class="btn btn-success" type="submit">SUBMIT</button>
+</form>
+

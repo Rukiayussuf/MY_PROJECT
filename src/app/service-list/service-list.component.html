@@ -1,0 +1,28 @@
+<h2>TICKET LIST</h2>
+<table class="table table-striped">
+    <thead>
+        <th>DATE</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>GENDER</th>
+        <th>PHONE NUMBER</th>
+        <th>DEST AND PRICE</th>
+        <th>DAY</th>
+        <th>TIME</th>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor ="let carService of carServices">
+            <td>{{ carService.date }}</td>
+            <td>{{ carService.first_name }}</td>
+            <td>{{ carService.last_name }}</td>
+            <td>{{ carService.gender }}</td>
+            <td>{{ carService.phone_no }}</td>
+            <td>{{ carService.dest_price }}</td>
+            <td>{{ carService.day }}</td>
+            <td>{{ carService.time }}</td>
+            <td><button (click) ="updateservice(carService.id)" class="btn btn-info">update</button>
+            <button (click) ="deleteservice(carService.id)" class="btn btn-danger" style="margin-left: 10px;">DELETE</button></td>
+        </tr>
+    </tbody>
+</table>
